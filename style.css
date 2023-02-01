@@ -4,45 +4,81 @@
     box-sizing: border-box;
   }
   
-  /* Hidden class */
-  .hidden {
-    display: none;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  
+ body{
+    background-color: black;
+    color: white;
+ }
+  /* Hidden class */
+ .hidden {
+    display: none;
+    
+  }
+ #congratsImage, #tryAgainImage {
+  width: 20%;
+  margin: auto;
+
+}
+ 
   /* image styling */
   .img {
     width: 200px;
     height: 200px;
     margin: 1rem;
   }
-  
+ 
   .flex-container {
+    margin: 1.5rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 30px;
+  
+}
+ 
+/* Form group and input elements */
+/* Styling of Form Group */
+.form-Group {
+    margin: 1.5rem;
+    width: 33%;
+    margin: auto;
+    padding: 10px;
+    background-color: #872dcb;
+    border-radius: 5px;
+    border: 0.5px solid #605757;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
-  /* Form group and input elements */
-  .form-Group {
-    margin: 1.5rem;
-    font-size: 1.2rem;
+  /* Styling of Display Form info */
+  .displayformInfo {
+    margin: 1.5rem;
+    width: 33%;
+    margin: auto;
+    padding: 10px;
+    background-color: #2b9ca2;
+    border-radius: 5px;
+    border: 0.5px solid #15b65b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
-  #sumbitBtn {
-    padding: 0.2rem;
-    font-size: 1rem;
+  /* Styling of dice image with score and attempts */
+  .diceWthScore {
+    margin: 1.5rem;
+    width: 33%;
+    margin: auto;
+    padding: 10px;
+    background-color: #1c75b1;
+    border-radius: 5px;
+    border: 0.5px solid #34d115aa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
-  /* Display info */
-  #displayInfo {
-    margin: 2rem;
-  }
-  
-  #info {
-    font-size: 1rem;
-  }
-  
-  /* dice Image container*/
-  #diceWthScore {
-    margin: 1.5rem;
-  }
+
+/* dice Image container*/
+#diceWthScore {
+  margin: 1.5rem;
+}
