@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jan1 Module Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Images with Flex Box -->
+    <div class="flex-container">
+        <div>
+            <button id="img-1" onclick="openFormFunction()"><img class="img" src="https://img-res.pitchero.com/?url=images.pitchero.com%2Fui%2F3129%2Fimage_5b7dd560ac3b6.jpg&h=764&w=1360&t=fit&o=jpg " alt="img1"></button>
+        </div>
+
+        <div>
+            <button id="img-2" onclick="displayFormInfoFunction()"><img class="img" src="https://img.freepik.com/premium-vector/gamers-esport-player-profile-editable-template_389255-112.jpg?w=740"
+                    alt="img2"></button>
+        </div>
+
+        <div>
+            <button id="img-3" onclick="displayDiceWthScore()"><img class="img" src="https://img.freepik.com/free-vector/3d-rendering-dices-illustration_52683-75998.jpg?w=1380&t=st=1675253131~exp=1675253731~hmac=1f8736666920b9ec60f6922b16c6ce30c7b371fec92e1089dc90b2ccd07a036e" alt="img3"></button>
+        </div>
+
+        <div>
+            <button id="img-4" onclick="generateCouponCodeFunction()"><img class="img" src="https://venngage-wordpress.s3.amazonaws.com/uploads/2021/12/Coupon-Maker.gif"
+                    alt="img4"></button>
+        </div>
+    </div>
+
+    <!-- Form Group -->
+    <div class="form-Group hidden" id="form">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required>
+
+        <label for="userName">User Name: </label>
+        <input type="text" id="userName" required>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" required><br><br>
+
+        <button id="sumbitBtn" type="submit" onclick="submitFormInfoFunction()">Submit</button>
+    </div>
+
+    <!-- Display Form info -->
+    <div class="displayformInfo hidden" id="displayInfo">
+        <h2>Your information is</h2><br>
+        <span id="info"></span><br><br>
+        <p>Click on next Image to proceed further</p>
+    </div>
+
+    <!-- dice image with score and attempts -->
+    <div class="diceWthScore hidden" id="diceWthScore">
+        <p>Attempts left : <span id="attemptsLeft">0</span></p><br>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="https://img.freepik.com/free-vector/vector-set-red-casino-dice-top-view-isolated-green-poker-table_1284-48501.jpg?w=740&t=st=1675253274~exp=1675253874~hmac=827d2db7e8e5081b389601192e14c152c6626a72cee3f13caa2742bee3cfea81"
+                    alt="diceImage"></button><br><br>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Congratulations and try again Image -->
+    <div>
+        <img class="hidden" id="congratsImage" src="https://img.freepik.com/free-vector/congrats-lettering-congratulation-text-labels-cheers-sign-decorated-with-golden-burst-stars-congratulations_102902-2285.jpg?w=1380&t=st=1675253621~exp=1675254221~hmac=ac125bad966eaf27d9fb852218151aecbf0d3059d6fadd2710732e977f2fa456" alt="congratsImage">
+    </div>
+    <div>
+        <img class="hidden" id="tryAgainImage" src="https://sourcingandsupplychain.com/wp-content/uploads/2020/06/better-luck-next-time.png" alt="tryAgainImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
